@@ -1,8 +1,8 @@
 development:
   default:
-    url: http://salt-prod.stanford.edu/chris_solr  
+    url: http://50.19.224.177:8080/solr 
   fulltext:
-    url: http://salt-prod.stanford.edu/chris_solr
+    url: http://50.19.224.177:8080/solr
 test: &TEST
   default:
     url: http://localhost:8983/solr/development
@@ -10,9 +10,9 @@ test: &TEST
     url: http://localhost:8983/solr/development
 production:
   default:
-    url: http://salt-prod.stanford.edu/chris_solr
+    url: http://50.19.224.177:8080/solr
   fulltext:
-    url: http://salt-prod.stanford.edu/chris_solr
+    url: http://50.19.224.177:8080/solr
 cucumber:
   <<: *TEST
 cucumber:
