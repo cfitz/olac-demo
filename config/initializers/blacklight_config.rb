@@ -73,7 +73,7 @@ Blacklight.configure(:shared) do |config|
       ],
     :labels => {
         "genrename_facet" => "Genre:",
-        "workdate_facet" => "Dates:",
+        "workdate_facet" => "Original Date:",
         "worklang_facet" => "Original Language:",
         "countryname_facet" => "Country:",
         "directorname_facet" => "Director:",
