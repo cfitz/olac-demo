@@ -10,9 +10,9 @@ test: &TEST
     url: http://localhost:8983/solr/development
 production:
   default:
-    url: http://50.19.224.177:8080/solr
+    url: http://ec2-107-20-114-73.compute-1.amazonaws.com:8888/solr
   fulltext:
-    url: http://50.19.224.177:8080/solr
+    url: http://ec2-107-20-114-73.compute-1.amazonaws.com:8888/solr
 cucumber:
   <<: *TEST
 cucumber:

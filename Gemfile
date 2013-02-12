@@ -1,8 +1,7 @@
 source :rubygems
 
-gem 'rails', '=2.3.5'
+gem 'rails', '=2.3.15'
 
- 
 gem 'authlogic', '>=0.1.0'
 gem 'builder', '=2.1.2'
 gem 'columnize'
