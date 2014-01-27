@@ -2,16 +2,16 @@ GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.2.9)
-    actionmailer (2.3.15)
-      actionpack (= 2.3.15)
-    actionpack (2.3.15)
-      activesupport (= 2.3.15)
-      rack (~> 1.1.3)
-    activerecord (2.3.15)
-      activesupport (= 2.3.15)
-    activeresource (2.3.15)
-      activesupport (= 2.3.15)
-    activesupport (2.3.15)
+    actionmailer (2.3.18)
+      actionpack (= 2.3.18)
+    actionpack (2.3.18)
+      activesupport (= 2.3.18)
+      rack (~> 1.1.0)
+    activerecord (2.3.18)
+      activesupport (= 2.3.18)
+    activeresource (2.3.18)
+      activesupport (= 2.3.18)
+    activesupport (2.3.18)
     authlogic (2.1.9)
       activerecord (~> 2.3.0)
       activesupport (~> 2.3.0)
@@ -19,50 +19,61 @@ GEM
       activesupport (>= 2.0)
     builder (2.1.2)
     columnize (0.3.6)
-    crack (0.3.2)
-    curb (0.8.3)
-    database_cleaner (0.9.1)
-    diff-lcs (1.2.1)
-    haml (3.1.7)
+    crack (0.4.1)
+      safe_yaml (~> 0.9.0)
+    curb (0.8.5)
+    database_cleaner (1.2.0)
+    diff-lcs (1.2.5)
+    ensure_valid_encoding (0.5.3)
+    haml (4.0.5)
+      tilt
     httparty (0.10.2)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
-    json_pure (1.7.7)
+    json_pure (1.8.1)
     linecache (0.46)
       rbx-require-relative (> 0.0.4)
-    marc (0.5.0)
+    marc (0.8.1)
+      ensure_valid_encoding
+      unf
     mime-types (1.21)
-    multi_json (1.5.1)
-    multi_xml (0.5.3)
-    multipart-post (1.1.5)
+    multi_json (1.8.4)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
     nokogiri (1.5.6)
+    pg (0.17.1)
     rack (1.1.6)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (2.3.15)
-      actionmailer (= 2.3.15)
-      actionpack (= 2.3.15)
-      activerecord (= 2.3.15)
-      activeresource (= 2.3.15)
-      activesupport (= 2.3.15)
+    rails (2.3.18)
+      actionmailer (= 2.3.18)
+      actionpack (= 2.3.18)
+      activerecord (= 2.3.18)
+      activeresource (= 2.3.18)
+      activesupport (= 2.3.18)
       rake (>= 0.8.3)
-    rake (10.0.3)
+    rake (0.8.7)
     rbx-require-relative (0.0.9)
-    rcov (1.0.0)
     rsolr (0.12.1)
       builder (>= 2.1.2)
     rsolr-ext (0.12.0)
       rsolr (>= 0.12.1)
+    safe_yaml (0.9.7)
     solr-ruby (0.0.8)
-    sqlite3-ruby (1.2.5)
-    term-ansicolor (1.0.7)
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
+    tilt (2.0.0)
+    tins (0.13.1)
     trollop (2.0)
+    unf (0.1.3)
+      unf_ext
+    unf_ext (0.0.6)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
     will_paginate (2.3.16)
-    xml-simple (1.1.2)
+    xml-simple (1.1.3)
 
 PLATFORMS
   ruby
@@ -78,22 +89,21 @@ DEPENDENCIES
   database_cleaner
   diff-lcs
   haml
-  httparty
+  httparty (= 0.10.2)
   json_pure (> 1.4.3)
   linecache
   marc
-  mime-types
+  mime-types (= 1.21)
   multipart-post
-  nokogiri
+  nokogiri (= 1.5.6)
+  pg
   rack
   rack-test
-  rails (= 2.3.15)
-  rake
-  rcov
+  rails (= 2.3.18)
+  rake (= 0.8.7)
   rsolr (= 0.12.1)
   rsolr-ext (= 0.12.0)
   solr-ruby
-  sqlite3-ruby (= 1.2.5)
   term-ansicolor
   trollop
   webrat
